@@ -3,6 +3,7 @@ import styles from "./Image.module.css";
 
 function Image(props) {
   //{ isVisible, onAddClick, onDeleteClick, onZoomInClick, onZoomOutClick, imgWidth }
+
   return (
     <div>
       <div className={styles.buttons}>
@@ -20,10 +21,7 @@ function Image(props) {
         </button>
       </div>
 
-      <div
-        className={styles.authorFavCityPhoto}
-        style={{ display: props.isVisible ? "block" : "none" }}
-      >
+      <div style={{ display: props.isVisible ? "block" : "none" }}>
         <img
           className={styles.image}
           style={{ width: props.imgWidth + "px" }}
